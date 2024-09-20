@@ -1,0 +1,129 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+/* Table Styles */
+body.dark-mode table {
+  background-color: #1e1e1e; /* Dark background for the table */
+  color: #ffffff; /* White text for the table */
+  border-collapse: collapse;
+  width: 100%;
+}
+
+body.dark-mode table th {
+  background-color: #333; /* Darker background for the header */
+  color: #ffffff; /* White text for header */
+  border-bottom: 1px solid #444;
+  padding: 10px;
+}
+
+body.dark-mode table td {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  padding: 10px;
+  border-bottom: 1px solid #444; /* Light border between rows */
+}
+
+body.dark-mode table tr:hover {
+  background-color: #333; /* Highlight row on hover */
+}
+
+body.dark-mode .pagination button {
+  background-color: #333;
+  color: white;
+  border: 1px solid #444;
+}
+
+/* Additional styles for buttons, inputs, and general elements */
+body.dark-mode input,
+body.dark-mode select,
+body.dark-mode button {
+  background-color: #333;
+  color: white;
+}
+
+body.dark-mode .edit-btn,
+body.dark-mode .delete-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+body.dark-mode .edit-btn:hover,
+body.dark-mode .delete-btn:hover {
+  background-color: #0056b3;
+}
